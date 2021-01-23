@@ -28,7 +28,7 @@ program
     (val) =>
       validate(val, /^.+\.(yml|yaml)$/gi, 'output file must be "*.(yml|yaml)"')
   )
-  .option("-c, --config", "configuration file", false)
+  .option("-c, --config <*.yml|yaml file>", "configuration file")
   .option("--debug", "debug mode, such as print error tracks", false)
   .action((args) => {
     const params = {
