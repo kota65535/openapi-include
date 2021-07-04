@@ -1,6 +1,6 @@
 "use strict";
 
-const Path = require("path");
+const Path = require("path").posix;
 const { readYAML } = require("./yaml");
 const { download } = require("./http");
 const { sliceObject, parseUrl } = require("./util");

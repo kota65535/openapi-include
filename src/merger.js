@@ -1,6 +1,6 @@
 "use strict";
 
-const Path = require("path");
+const Path = require("path").posix;
 const Url = require("url");
 const Glob = require("glob");
 const _ = require("lodash");
